@@ -1,0 +1,84 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "base/base";
+
+
+$primaryfont: 	Lato;
+$badassfont:	Monoton;
+
+$darkteal:		#00444E;
+$dutchwhite:	#FCF3D6;
+$bone:			#E2D9C7;
+$mutedbeige:	#DDCCAD;
+$wheat:			#F0E1B4;
+
+body {
+	margin: 		0;
+	background-color: 	$dutchwhite;
+	font-family: 		$primaryfont;
+	color: 				$darkteal;
+
+
+
+}
+
+#name {
+	font-family: 		$primaryfont;
+	text-transform: 	lowercase;
+
+}
+
+#subhead {
+	font-family: 		$primaryfont;
+	font-size: 			1.5em;
+
+}
+
+h4 {
+	font-size: 			1.25em;
+}
+
+#summary {
+	font-family: 		$primaryfont;
+
+
+}
+
+#hireme {
+	font-family: 		$primaryfont;
+
+
+}
+
+#technicalSkills {
+	font-family: 		$primaryfont;
+
+
+}
+
+.sectionHeader {
+	font-family: 		$primaryfont;
+
+
+}
+
+table {
+
+}
+
+.skillCat {
+	font-weight: bold;
+
+}
+
+ul {
+	@extend %default-ul;
+
+}
+.skillList {
+
+}
+
+
+
+
