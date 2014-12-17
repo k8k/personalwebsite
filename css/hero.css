@@ -214,10 +214,6 @@ ol {
   margin: 0;
   padding: 0;
   list-style-type: none; }
-  article.type-system-rounded ul {
-    list-style-type: disc;
-    margin-bottom: 0.75em;
-    padding-left: 1.5em; }
 dl {
   margin-bottom: 0.75em; }
   dl dt {
@@ -454,10 +450,6 @@ ol {
   margin: 0;
   padding: 0;
   list-style-type: none; }
-  article.type-system-rounded ul {
-    list-style-type: disc;
-    margin-bottom: 0.75em;
-    padding-left: 1.5em; }
 dl {
   margin-bottom: 0.75em; }
   dl dt {
@@ -479,89 +471,92 @@ input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap; }
 
-article.type-system-rounded {
-  padding: 10%;
+article.type-system-sans {
   text-align: left; }
-  article.type-system-rounded:after {
+  article.type-system-sans:after {
     content: "";
     display: table;
     clear: both; }
-  article.type-system-rounded .type {
+  article.type-system-sans .type {
     border-bottom: 1px solid;
     display: inline-block;
-    font-family: "Nunito", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-size: .7em;
-    font-weight: 800;
+    font-weight: 900;
+    letter-spacing: 1px;
     margin-bottom: 2em;
-    padding: .3em 0;
+    padding: .1em 0;
     text-align: left;
     text-transform: uppercase; }
-  article.type-system-rounded h1 {
-    font-family: "Varela Round", sans-serif;
-    font-size: 1.8em;
-    margin-bottom: .5em; }
+  article.type-system-sans h1 {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: .6em; }
     @media screen and (min-width: 40em) {
-      article.type-system-rounded h1 {
+      article.type-system-sans h1 {
         font-size: 2.4em; } }
-  article.type-system-rounded h2 {
-    font-family: "Varela Round", sans-serif;
+  article.type-system-sans h2 {
+    font-family: "PT Sans", sans-serif;
     font-size: 1.2em;
     font-weight: 400;
     line-height: 1.4em;
-    margin-bottom: .9em; }
+    margin-bottom: 1.2em; }
     @media screen and (min-width: 40em) {
-      article.type-system-rounded h2 {
+      article.type-system-sans h2 {
         font-size: 1.4em; } }
-  article.type-system-rounded code {
+  article.type-system-sans code {
     white-space: nowrap;
     font-family: monaco;
     background: #F7F7F7;
     border: 1px solid #E0E0E0;
     border-radius: 4.5px;
     padding: .1em .4em;
-    font-size: .7em;
+    font-size: .65em;
     font-style: normal; }
-  article.type-system-rounded h3 {
-    font-family: "Varela Round", sans-serif;
-    font-size: 1.2em;
-    font-weight: 400;
-    line-height: 1.3em;
-    margin-bottom: .4em; }
-  article.type-system-rounded p.date {
-    color: rgba(51, 51, 51, 0.4);
-    font-family: "Nunito", sans-serif;
-    font-size: .9em;
-    margin-bottom: .3em; }
-  article.type-system-rounded p {
-    font-family: "Nunito", sans-serif;
+  article.type-system-sans h3 {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
     line-height: 1.4em;
-    font-size: 1.05em;
+    margin-bottom: .5em; }
+  article.type-system-sans p.date {
+    color: rgba(51, 51, 51, 0.4);
+    font-family: "PT Sans", sans-serif;
+    font-size: .8em;
+    margin-bottom: .5em; }
+  article.type-system-sans p {
+    font-family: "PT Sans", sans-serif;
     font-weight: 300;
+    letter-spacing: 1;
     margin-bottom: 1.5em; }
-    article.type-system-rounded p span {
-      font-family: "Varela Round", sans-serif;
-      text-transform: uppercase;
-      font-size: 0.8em; }
-  article.type-system-rounded a.read-more {
+    article.type-system-sans p span {
+      font-family: "PT Sans", sans-serif;
+      font-weight: 600;
+      font-size: .8em;
+      text-transform: uppercase; }
+  article.type-system-sans hr {
+    width: 3em; }
+  article.type-system-sans a.read-more {
     display: inline-block;
-    font-family: "Varela Round", sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: .8em;
     text-transform: uppercase;
     margin-left: .2em;
     position: relative; }
-    article.type-system-rounded a.read-more span {
+    article.type-system-sans a.read-more span {
       position: absolute;
-      font-size: 1.5em;
-      top: -1px;
-      right: -12px; }
-  article.type-system-rounded hr {
-    width: 3em; }
-  article.type-system-rounded p.author {
-    font-family: "Nunito", sans-serif; }
+      font-size: 1.7em;
+      top: -2px;
+      right: -10px; }
+  article.type-system-sans p.author {
+    font-family: "PT Sans", sans-serif;
+    font-style: italic; }
 
 .hero {
-  margin-bottom: 3em;
+  margin-bottom: 5em;
   background: url("../img/katesmile.jpg"), -webkit-linear-gradient(10deg, #20392B, #7F99BE), no-repeat #7F99BE scroll;
   background: url("../img/katesmile.jpg"), linear-gradient(10deg, #20392B, #7F99BE), no-repeat #7F99BE scroll;
   background-repeat: no-repeat;
@@ -595,12 +590,12 @@ article.type-system-rounded {
       box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28); }
       .hero .hero-inner .hero-copy h1 {
         font-size: 3em;
-        font-family: "Varela Round", sans-serif; }
+        font-family: "Titillium Web", sans-serif; }
         @media screen and (min-width: 53.75em) {
           .hero .hero-inner .hero-copy h1 {
             font-size: 5em; } }
       .hero .hero-inner .hero-copy p {
-        font-family: "Nunito", sans-serif;
+        font-family: "PT Sans", sans-serif;
         margin: auto;
         font-weight: 200;
         line-height: 1.4em;
@@ -615,5 +610,35 @@ article.type-system-rounded {
           .hero .hero-inner .hero-copy p {
             font-size: 3em;
             max-width: 60%; } }
+
+#map_canvas {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 5em; }
+
+#map_canvas img {
+  max-width: none; }
+
+#map_canvas #siteNotice {
+  max-width: 100px;
+  max-height: 100px; }
+
+#map_canvas .content {
+  padding: .7em .5em 1em .5em; }
+
+#map_canvas .firstHeading {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.4em;
+  margin-bottom: .4em; }
+
+#map_canvas .bodyContent p {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1em;
+  margin-bottom: 0; }
+
+#map_canvas .bodyContent p:last-of-type {
+  border-top: 1px solid silver;
+  margin-top: .5em;
+  padding-top: .3em; }
 
 /*# sourceMappingURL=hero.css.map */

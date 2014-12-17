@@ -2,6 +2,8 @@
 @import "neat/neat";
 @import "base/base";
 
+@import "typography";
+
 $browser-top-bar-height: 1.5em;
 $browser-circle-size: .5em; 
 $browser-circle-margin: ($browser-top-bar-height - $browser-circle-size) / 2;
@@ -17,6 +19,10 @@ $browser-content-background-3: #F0F0F0;
   padding-top: 0;
   text-align:center;
   width:100%;
+
+  h1 {
+    font-family: $sans-serif-2;
+  }
 
   @include media($large-screen) {
     padding-top: 2em;
@@ -77,7 +83,7 @@ $browser-content-background-3: #F0F0F0;
   }
 
   .browser-content {
-    background: "../img/halfhome.png";
+    background: url(https://raw.githubusercontent.com/k8k/personalwebsite/master/img/halfdetail.png);
     background-color: $browser-content-background-1;
     background-position: top;
     background-repeat: no-repeat;
@@ -96,7 +102,7 @@ $browser-content-background-3: #F0F0F0;
   }
 
   .browser-content {
-    background: url(https://raw.githubusercontent.com/thoughtbot/refills/9c16f8b69d857c296c85f2d8c434e825f813a566/source/images/refills-screenshot2.jpg);
+    background: url(https://raw.githubusercontent.com/k8k/personalwebsite/master/img/halfhome.png);
     background-color: $browser-content-background-2; 
     background-position: top;
     background-repeat: no-repeat;
@@ -113,7 +119,7 @@ $browser-content-background-3: #F0F0F0;
   }
 
   .browser-content {
-    background: url(https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/refills-screenshot3.png);
+    background: url(https://raw.githubusercontent.com/k8k/personalwebsite/master/img/halfresults.png);
     background-color: $browser-content-background-3; 
     background-position: top;
     background-repeat: no-repeat;

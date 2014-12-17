@@ -2,9 +2,9 @@
 @import "neat/neat";
 @import "base/base";
 
+@import "typography";
 
-$primaryfont: 	Lato;
-$badassfont:	Monoton;
+
 
 $darkteal:		#00444E;
 $dutchwhite:	#FCF3D6;
@@ -15,52 +15,20 @@ $wheat:			#F0E1B4;
 body {
 	margin: 		0;
 	background-color: 	$dutchwhite;
-	font-family: 		$primaryfont;
+	font-family: 		$sans-serif-2;
 	color: 				$darkteal;
 
 
 
 }
 
-#name {
-	font-family: 		$primaryfont;
-	text-transform: 	lowercase;
+.subhead {
+	font-family: 		$sans-serif;
+	text-align: 		center;
+	margin-bottom: 		1em;
 
 }
 
-#subhead {
-	font-family: 		$primaryfont;
-	font-size: 			1.5em;
-
-}
-
-h4 {
-	font-size: 			1.25em;
-}
-
-#summary {
-	font-family: 		$primaryfont;
-
-
-}
-
-#hireme {
-	font-family: 		$primaryfont;
-
-
-}
-
-#technicalSkills {
-	font-family: 		$primaryfont;
-
-
-}
-
-.sectionHeader {
-	font-family: 		$primaryfont;
-
-
-}
 
 table {
 
@@ -78,6 +46,51 @@ ul {
 .skillList {
 
 }
+
+.scroll-on-page {
+	padding: 0 10% 10% 10%;
+	font-family: $sans-serif;
+ul {
+	@extend %default-ul;
+
+}
+
+}
+
+
+.scroll-on-page aside {
+  @include media($large-screen) {
+    @include span-columns(4);
+  }
+}
+
+.scroll-on-page-link {
+  border-bottom: 1px solid transparentize($base-link-color, .8);
+  padding: $base-spacing / 2 0;
+  margin-right: $base-spacing;
+  display: block;
+
+  &:last-child {
+    margin-bottom: $base-spacing;
+  }
+}
+
+.scroll-on-page article {
+  h4 {
+    margin-bottom: .5em; 
+    font-family: $sans-serif-2;
+  }
+
+  section p:last-of-type {
+    margin-bottom: 2em; 
+  }
+
+  @include media($large-screen) {
+    @include span-columns(8);
+  }
+}
+
+// Based on code by http://codepen.io/xmark/
 
 
 
