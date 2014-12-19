@@ -852,6 +852,12 @@ body {
     .scroll-on-page article:last-child {
       margin-right: 0; } }
 
+#housewife {
+  text-align: center;
+  background-color: #DDCCAD;
+  padding: 1%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28); }
+
 /* Neat 1.7.0
  * http://neat.bourbon.io
  * Copyright 2012-2014 thoughtbot, inc.
