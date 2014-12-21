@@ -77,12 +77,6 @@ $(document).ready(function() {
 
 // Goog Maps
 
-
-
-
-
-
-
   function initialize() {
     var oakLatlng = new google.maps.LatLng(37.8093778,-122.2629349);
     var mapCenter = new google.maps.LatLng(37.8093778,-122.2629349);
@@ -106,8 +100,8 @@ $(document).ready(function() {
          elementType: 'geometry',
          stylers: [
            { hue: '#ffff00' },
-           { saturation: 30 },
-           { lightness: 10}
+           { saturation: -80 },
+           { lightness: 0}
          ]
        },
     ]);
@@ -128,7 +122,7 @@ $(document).ready(function() {
     var marker = new google.maps.Marker({
         position: oakLatlng,
         map: map,
-        title: 'thoughtbot (Sweden)'
+        title: 'Oakland'
     });
     google.maps.event.addListener(marker, 'click', function() {
       infowindow.open(map,marker);
