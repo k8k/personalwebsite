@@ -177,20 +177,6 @@
     <p>
         <strong>Judgmental Eye (2014):</strong> A threaded movie recommendations app that incorporates machine learning algorithms (specifically, Pearson Correlation). Built  using Python-Flask, HTML/CSS, JavaScript, AJAX, Bootstrap, and SQLite/SQLAlchemy.
     </p>
-    <pre><code>
-    class Rating(Base):
-    __tablename__ = "ratings"
-      id          = Column(Integer,       primary_key= True)
-      movie_id    = Column(Integer,       ForeignKey('movies.id'))
-      user_id     = Column(Integer,       ForeignKey('users.id'))
-      rating      = Column(Integer(1),    nullable = False)
-
-      movie       = relationship("Movie",
-                    backref = backref("ratings", order_by=id))
-
-      user        = relationship("User",
-                    backref = backref("ratings",order_by = id))
-    </code>
 
     </section>
     <section>
